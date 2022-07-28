@@ -16,6 +16,10 @@ git add .
 echo "- Commit all changed"
 git commit -am "First commit"
 
+echo "- Push project to git repository"
+git remote add origin $GIT_URL
+git push --set-upstream origin master
+
 if [ $? == 0 ]; then
     echo "SUCCESS"
     echo "- Remove this script"
